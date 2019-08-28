@@ -10,7 +10,7 @@ Import成功后便可以在 main 里面创建新的Scanner:
 注：暂时不会讨论Scanner的parameter中输入其他内容的情况。
 - - - -
 对于上面定义的Scanner对象，它能够实时接收用户在Terminal中的输入，并且经过处理后直接输出到Terminal，演示如下：
-<a href='Scanner_demo.mov'>Scanner_demo.mov</a>
+<a href='Scanner_demo.mov'>Scanner_demo.mov</a> *如果这里失灵了的话直接看下面的文章也无所谓*
 - - - -
 上面演示的全部代码截图如下：
 ![](Java%20%7C%20%E4%BD%BF%E7%94%A8Scanner%E7%B1%BB/6F531EA9-591F-4A10-8166-33D1C0A830ED.png)
