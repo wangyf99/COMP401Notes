@@ -3,7 +3,7 @@
 
 java.util.Scanner 是Java 5的新特征，我们可以通过Scanner类获取用户输入并且对字符串进行各种操作。
 
-<a href='https://docs.oracle.com/javase/7/docs/api/java/util/Scanner.html'>Scanner官方文档</a>
+Scanner官方文档在<a href='https://docs.oracle.com/javase/7/docs/api/java/util/Scanner.html'>这里</a>
 
 需要使用Scanner的时候需要先import scanner：
 
