@@ -8,12 +8,40 @@
 - 使用方法
 
 	- 将其下载到对应的文件夹中就能用了
+	
+- 使用的OO Signature
+
+```Java
+insert(String s) -> boolean;
+remove(String s) -> boolean;
+findMin() -> String;
+findMax() -> String;
+empty() -> boolean;
+contains(String s) -> boolean;
+size() -> int;
+height() -> int;
+```
+
+- Axioms
+
+```Java
+insert: (insert success)?(True):(False)
+remove: (remove success)?(True):(False)
+findMin: (empty)?(null):(BST(min))
+findMax: (empty)?(null):(BST(max))
+empty: (size == 0)
+contains: (contain s)?(True):(False)
+size: BST(size)
+height: BST(height)
+```
 
 - 注意事项
 
 	- **单元测试全部通过并不代表程序完全成功运行，请务必自己排除其他疏漏内容**
 	
 	- **请务必根据要求自行更改单元测试内的对应内容**
+	
+	- **请根据需求自行更改JUnit中的Method名**
 
 - - - -
 
