@@ -1,7 +1,7 @@
 package A2JUnit;
 
-import BST_A2.*;
-import static org.junit.Assert.*;
+import BST_A2.*; // 请务必自行更改这里的import package名
+import static org.junit.Assert.*; // 使用JUnit 5，运行前请自行import JUnit 5
 
 import java.util.Random;
 
@@ -82,26 +82,25 @@ public class JUnitMain {
 		
 	}
 	
-//	@Test
-//	public void testRemoveLeaf() {
-//		bst.insert("g");
-//		bst.insert("a");
-//		bst.insert("s");
-//		bst.insert("d");
-//		bst.insert("f");
-//		bst.insert("t");
-//		bst.insert("p");
-//		
-//		boolean rem_a = bst.remove("a");
-//		assertEquals(true, rem_a);
-//		assertEquals(6, bst.size());
-//		assertEquals(false, bst.contains("a"));
-//	}
+	@Test
+	public void testRemoveLeaf() {
+		bst.insert("g");
+		bst.insert("a");
+		bst.insert("s");
+		bst.insert("d");
+		bst.insert("f");
+		bst.insert("t");
+		bst.insert("p");
+		
+		boolean rem_a = bst.remove("a");
+		assertEquals(true, rem_a);
+		assertEquals(6, bst.size());
+		assertEquals(false, bst.contains("a"));
+	}
 	
 	@Test
 	public void testRemoveBasic() {
 		
-		// Remove Element not in the tree
 		bst = new BST();
 		bst.insert("g");
 		bst.insert("a");
@@ -109,13 +108,11 @@ public class JUnitMain {
 		assertEquals(false, rem_d);
 		assertEquals(2, bst.size());
 		
-		// Remove root element with left child
 		boolean rem_g = bst.remove("g");
 		assertEquals(true, rem_g);
 		assertEquals(1, bst.size());
 		assertEquals(false, bst.contains("g"));
 		
-		// Remove root element with no child
 		boolean rem_a = bst.remove("a");
 		assertEquals(true, rem_a);
 		assertEquals(0, bst.size());
@@ -124,7 +121,6 @@ public class JUnitMain {
 	
 	@Test
 	public void testRightChildRemove() {
-		// Remove root with right child
 		bst = new BST();
 		bst.insert("g");
 		bst.insert("j");
@@ -133,7 +129,6 @@ public class JUnitMain {
 		assertEquals(1, bst.size());
 		assertEquals(false, bst.contains("g"));
 		
-		// remove right leaf 
 		bst = new BST();
 		bst.insert("g");
 		bst.insert("j");
@@ -142,7 +137,6 @@ public class JUnitMain {
 		assertEquals(1, bst.size());
 		assertEquals(false, bst.contains("j"));
 		
-		// remove right node with one child on the right of the node
 		bst = new BST();
 		bst.insert("g");
 		bst.insert("j");
@@ -152,7 +146,6 @@ public class JUnitMain {
 		assertEquals(2, bst.size());
 		assertEquals(false, bst.contains("j"));
 		
-		// remove right node with one child on the left of the node
 		bst = new BST();
 		bst.insert("g");
 		bst.insert("j");
@@ -181,7 +174,6 @@ public class JUnitMain {
 	
 	@Test
 	public void testLeftChildRemove() {
-		// Remove root with left child
 		bst = new BST();
 		bst.insert("g");
 		bst.insert("a");
@@ -190,7 +182,6 @@ public class JUnitMain {
 		assertEquals(1, bst.size());
 		assertEquals(false, bst.contains("g"));
 		
-		// remove left leaf 
 		bst = new BST();
 		bst.insert("g");
 		bst.insert("a");
@@ -199,7 +190,6 @@ public class JUnitMain {
 		assertEquals(1, bst.size());
 		assertEquals(false, bst.contains("a"));
 		
-		// remove left node with one child on the right of the node
 		bst = new BST();
 		bst.insert("g");
 		bst.insert("b");
@@ -209,7 +199,6 @@ public class JUnitMain {
 		assertEquals(2, bst.size());
 		assertEquals(false, bst.contains("b"));
 		
-		// remove left node with one child on the left of the node
 		bst = new BST();
 		bst.insert("g");
 		bst.insert("b");
@@ -219,7 +208,6 @@ public class JUnitMain {
 		assertEquals(2, bst.size());
 		assertEquals(false, bst.contains("b"));
 		
-		// remove left node with two children
 		bst = new BST();
 		bst.insert("g");
 		bst.insert("d");
