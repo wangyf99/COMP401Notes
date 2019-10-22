@@ -1,5 +1,10 @@
 package A2JUnit;
 
+/**
+ * Author: Elnifio
+ * Date: Oct. 22, 2019
+ */
+
 import BST_A2.*; // 请务必自行更改这里的import package名
 import static org.junit.Assert.*; // 使用JUnit 5，运行前请自行import JUnit 5
 
