@@ -27,7 +27,7 @@ list 内容为 `1 -> 2 -> 3 -> 4`，`n = 3`，则打印出来的内容应该为:
 （在这里为了简便考虑，使用 `int[]` 取代 list。
 
 - - - -
-##### 实现方案1 - Iteration 方案
+#### 实现方案1 - Iteration 方案
 
 - 代码如下：
 
@@ -60,7 +60,7 @@ list 内容为 `1 -> 2 -> 3 -> 4`，`n = 3`，则打印出来的内容应该为:
 - 假设 list 长度为 M，遍历次数为 N，则时间复杂度为 O(M * N)，空间复杂度为 O(1) （因为不需要开辟额外的新空间）。
 
 - - - -
-##### 实现方案1.5 - 改编为 Recursion
+#### 实现方案1.5 - 改编为 Recursion
 - 观察上面的代码，我们可以发现对于这个循环，我们需要将如下内容放入 recursion 的 parameter list 中：
 	- array - 原始list
 	- count - 输出次数计数
@@ -69,7 +69,7 @@ list 内容为 `1 -> 2 -> 3 -> 4`，`n = 3`，则打印出来的内容应该为:
 	- index - 代表访问的元素位置
 - 具体方法不在这里赘述，大家可以自行尝试。
 - - - -
-##### 实现方案2 - 使用Stack
+#### 实现方案2 - 使用Stack
 我们知道，stack 这种数据结构的一个非常重要的特性就是 **Last in First out**。因此，Stack 十分适合用于对链表内部内容进行反向。
 
 Array-implemented Stack 代码实现如下：
@@ -118,7 +118,9 @@ Array-implemented Stack 代码实现如下：
 
 ![](Java%20%7C%20%E9%81%8D%E5%8E%86%20List%20%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B0/D7772718-0D49-4607-BE5A-E5755508A3F2.png)
 - - - -
-##### 有什么用？
+#### 有什么用？
 ![](Java%20%7C%20%E9%81%8D%E5%8E%86%20List%20%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B0/D5EE3B9E-FE09-4C7A-B6CB-3CA9723AE42D.png)
 
 我也不知道，哈哈哈哈哈哈哈哈。
+
+源代码在[这里](https://github.com/Elnifio/COMP401Notes/blob/master/Notes/Java%20%7C%20%E9%81%8D%E5%8E%86%20List%20%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B0/Main.java)
